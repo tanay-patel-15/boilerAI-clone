@@ -1,0 +1,30 @@
+{
+  "name": "boiler-ai-clone",
+  "version": "1.0.0",
+  "description": "AI Academic Advisor for Purdue Students - A comprehensive course planning and academic guidance tool",
+  "main": "server/index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm start",
+    "build": "cd client && npm run build",
+    "install-all": "npm install && cd server && npm install && cd ../client && npm install",
+    "setup-db": "cd server && npm run setup-db"
+  },
+  "keywords": [
+    "purdue",
+    "academic-advisor",
+    "ai",
+    "course-planning",
+    "education",
+    "react",
+    "typescript",
+    "express",
+    "postgresql"
+  ],
+  "author": "Boiler AI Clone",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+} 
